@@ -11,3 +11,6 @@ Function that counts and prints the frequency of each capital letter in a char a
 
 # C-1-13
 Function that changes all capitals to lowercase and lowercase to capitals in a char array. Also read N strings and modify them with the above function.
+
+# C-1-11
+Generate all unique combinations of the letters [A, C, D, G, J, K]. Print them, count them, and also count how many of them don't contain "D".
