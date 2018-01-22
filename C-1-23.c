@@ -3,30 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sort(char* names[], int ages[], int length) { //bubblesort with 2 arrays with age[] array as the base
-	int i, newN;
-	
-	do {
-		newN = 0;
-		for (i = 1; i < length; i++) {
-			if (ages[i - 1] < ages[i]) {
-				int tempAge;
-				char* tempName;
-				
-				tempAge = ages[i-1];
-				ages[i - 1] = ages[i];
-				ages[i] = tempAge;
-				
-				tempName = names[i-1];
-				names[i - 1] = names[i];
-				names[i] = tempName;
-				
-				newN = i;
-			}
-		}
-		length = newN;
-	} while (length != 0);
-}
+void sort(char*, int, int);
 
 int main() {
     char** names;
@@ -58,4 +35,29 @@ int main() {
 		printf("\n\nName: %s\n", names[i]);
 		printf("Age: %d", ages[i]);
 	}
+}
+
+void sort(char* names[], int ages[], int length) { //bubblesort with 2 arrays with age[] array as the base
+	int i, newN;
+	
+	do {
+		newN = 0;
+		for (i = 1; i < length; i++) {
+			if (ages[i - 1] < ages[i]) {
+				int tempAge;
+				char* tempName;
+				
+				tempAge = ages[i-1];
+				ages[i - 1] = ages[i];
+				ages[i] = tempAge;
+				
+				tempName = names[i-1];
+				names[i - 1] = names[i];
+				names[i] = tempName;
+				
+				newN = i;
+			}
+		}
+		length = newN;
+	} while (length != 0);
 }
