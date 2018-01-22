@@ -8,3 +8,6 @@ Function that fills an array with random numbers, then checks if every number is
 
 # C-1-7
 Function that counts and prints the frequency of each capital letter in a char array
+
+# C-1-13
+Function that changes all capitals to lowercase and lowercase to capitals in a char array. Also read N strings and modify them with the above function.
