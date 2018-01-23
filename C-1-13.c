@@ -2,17 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
  
-void *changeChars(char letters[], int length) {
-    int i;
-    for (i = 0; i < length; i++) {
-        if (letters[i] >= 65 && letters[i] <= 90) {
-            letters[i] += 32;
-        }
-        else if (letters[i] >= 97 && letters[i] <= 122) {
-            letters[i] -= 32;
-        }
-    }
-}
+void changeChars(char[], int);
  
 int main()
 {
@@ -36,4 +26,16 @@ int main()
     }
    
     return 0;
+}
+
+void changeChars(char letters[], int length) {
+    int i;
+    for (i = 0; i < length; i++) {
+        if (letters[i] >= 65 && letters[i] <= 90) {
+            letters[i] += 32;
+        }
+        else if (letters[i] >= 97 && letters[i] <= 122) {
+            letters[i] -= 32;
+        }
+    }
 }
