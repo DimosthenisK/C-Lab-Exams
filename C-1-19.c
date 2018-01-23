@@ -37,6 +37,10 @@ int main() {
 	else {
 		printf("\nEvery number in the array is unique");
 	}
+	
+	free(array);
+	
+	return 0;
 }
 
 void fill(int* array, int length, int min, int max) {
