@@ -35,6 +35,11 @@ int main() {
 		printf("\n\nName: %s\n", names[i]);
 		printf("Age: %d", ages[i]);
 	}
+	
+	free(names);
+	free(ages);
+	
+	return 0;
 }
 
 void sort(char* names[], int ages[], int length) { //bubblesort with 2 arrays with age[] array as the base
